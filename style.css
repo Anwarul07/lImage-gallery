@@ -5,10 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #191919;
+  /* background: #191919; */
 }
 .gallery {
-  width: 900;
+  width: 200px;
   display: flex;
   overflow-x: scroll;
 }
@@ -16,10 +16,28 @@ body {
   width: 100%;
   display: flex;
   grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  padding: 10px;
+  grid-gap: 5px;
+  padding: 5px;
   flex: none;
 }
 .gallery div img {
   width: 100%;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
 }
